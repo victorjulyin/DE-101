@@ -15,7 +15,7 @@
 
 #### SQL (metricks)
 
-Динамика дохода и прибыли	
+Динамика дохода и прибыли
     select extract ('year' From order_date) as yr,
     extract ('month' From order_date) as mn,
     SUM(sales) as s,
@@ -25,7 +25,7 @@
     order by 1,2
 	
 	
-Категории товаров(сравнение)	
+Категории товаров(сравнение)
 	select category,
 	subcategory,
 	SUM(sales) as c_sales,
