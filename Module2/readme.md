@@ -81,9 +81,10 @@ order by 1
 	from orders
 	group by region
 	order by 1
-	
-	
-По возвратам в %	
+
+
+По возвратам в %
+
 	with o(o_row_id, o_order_id, o_sales, o_returned)
 	AS
 	(select distinct row_id, order_id, sales, returned
