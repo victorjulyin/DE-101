@@ -3,26 +3,26 @@
 ## 2.3
 #### Sample of query (filling DB)
 
-DROP TABLE IF EXISTS people;
-CREATE TABLE people(
-   Person VARCHAR(17) NOT NULL PRIMARY KEY
-  ,Region VARCHAR(7) NOT NULL
-);
-INSERT INTO people(Person,Region) VALUES ('Anna Andreadi','West');
-INSERT INTO people(Person,Region) VALUES ('Chuck Magee','East');
-INSERT INTO people(Person,Region) VALUES ('Kelly Williams','Central');
-INSERT INTO people(Person,Region) VALUES ('Cassandra Brandow','South');
+    DROP TABLE IF EXISTS people;
+    CREATE TABLE people(
+       Person VARCHAR(17) NOT NULL PRIMARY KEY
+      ,Region VARCHAR(7) NOT NULL
+    );
+    INSERT INTO people(Person,Region) VALUES ('Anna Andreadi','West');
+    INSERT INTO people(Person,Region) VALUES ('Chuck Magee','East');
+    INSERT INTO people(Person,Region) VALUES ('Kelly Williams','Central');
+    INSERT INTO people(Person,Region) VALUES ('Cassandra Brandow','South');
 
 #### SQL (metricks)
 
 Динамика дохода и прибыли	
-	select extract ('year' From order_date) as yr,
-	extract ('month' From order_date) as mn,
-	SUM(sales) as s,
-	SUM(profit) as p
-	from orders
-	group by 1,2
-	order by 1,2
+    select extract ('year' From order_date) as yr,
+    extract ('month' From order_date) as mn,
+    SUM(sales) as s,
+    SUM(profit) as p
+    from orders
+    group by 1,2
+    order by 1,2
 	
 	
 Категории товаров(сравнение)	
