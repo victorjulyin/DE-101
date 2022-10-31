@@ -70,10 +70,10 @@ INSERT INTO people(Person,Region) VALUES ('Cassandra Brandow','South');
 	
 	
 По штатам	
-	select state, SUM(sales), SUM(profit), COUNT(distinct order_id)
-	from orders
-	group by state
-	order by 1
+select state, SUM(sales), SUM(profit), COUNT(distinct order_id)
+from orders
+group by state
+order by 1
 	
 	
 По регионам(сравнение)	
