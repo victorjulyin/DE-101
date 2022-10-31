@@ -16,6 +16,7 @@
 #### SQL (metricks)
 
 Динамика дохода и прибыли
+
     select extract ('year' From order_date) as yr,
     extract ('month' From order_date) as mn,
     SUM(sales) as s,
@@ -26,6 +27,7 @@
 	
 	
 Категории товаров(сравнение)
+
 	select category,
 	subcategory,
 	SUM(sales) as c_sales,
@@ -36,21 +38,24 @@
 	order by 1
 	
 	
-Региональные менеджеры(сравнение)	
+Региональные менеджеры(сравнение)
+
 	select person, SUM(sales), SUM(profit), COUNT(distinct order_id)
 	from people inner join orders USING(region)
 	group by person
 	order by 3
 	
 	
-Сегменты(сравнение)	
+Сегменты(сравнение)
+
 	select segment, SUM(sales), SUM(profit), COUNT(distinct order_id)
 	from orders
 	group by segment
 	order by 1
 	
 	
-Динамика по сегментам	
+Динамика по сегментам
+
 	select segment,
 	extract ('year' From order_date) as yr,
 	extract ('month' From order_date) as mn,
@@ -61,7 +66,8 @@
 	order by 1,2,3
 	
 	
-Основные показатели	
+Основные показатели
+
 	select SUM(sales),
 	SUM(profit),
 	AVG(profit/sales),
@@ -69,14 +75,16 @@
 	from orders
 	
 	
-По штатам	
+По штатам
+
 select state, SUM(sales), SUM(profit), COUNT(distinct order_id)
 from orders
 group by state
 order by 1
 	
 	
-По регионам(сравнение)	
+По регионам(сравнение)
+
 	select region, SUM(sales), SUM(profit), COUNT(distinct order_id)
 	from orders
 	group by region
