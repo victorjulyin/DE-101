@@ -112,7 +112,7 @@ order by 1
 
 ## 2.4 Data model
 
-![]https://github.com/victorjulyin/DE-101/blob/main/Module2/Снимок%20экрана%202022-11-03%20в%2021.32.40.png
+![alt](https://github.com/victorjulyin/DE-101/blob/main/Module2/Снимок%20экрана%202022-11-03%20в%2021.32.40.png)
 
 
 Queries to create and fill model tables:
