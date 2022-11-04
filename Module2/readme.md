@@ -5,9 +5,9 @@
 
     DROP TABLE IF EXISTS people;
     CREATE TABLE people(
-       Person VARCHAR(17) NOT NULL PRIMARY KEY
-      ,Region VARCHAR(7) NOT NULL
-    );
+        Person VARCHAR(17) NOT NULL PRIMARY KEY
+	,Region VARCHAR(7) NOT NULL
+	);
     INSERT INTO people(Person,Region) VALUES ('Anna Andreadi','West');
     INSERT INTO people(Person,Region) VALUES ('Chuck Magee','East');
     INSERT INTO people(Person,Region) VALUES ('Kelly Williams','Central');
@@ -119,14 +119,13 @@ Queries to create and fill model tables:
 
 --CREATING TABLES
 
-DROP TABLE IF EXISTS category cascade;
-
-CREATE TABLE category
-(
-category_id   int NOT NULL,
-category_name varchar(15) NOT NULL,
-CONSTRAINT PK_9 PRIMARY KEY ( category_id )
-);
+	DROP TABLE IF EXISTS category cascade;
+	CREATE TABLE category
+	(
+	category_id   int NOT NULL,
+	category_name varchar(15) NOT NULL,
+	CONSTRAINT PK_9 PRIMARY KEY ( category_id )
+	);
 
 
 
