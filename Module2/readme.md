@@ -415,7 +415,6 @@ order by 1) as in_query;
 
 
 
-
 --UPDATING the_order
 insert into the_order
 select row_number() over(), one, two, three, four, five, six, seven, eight, nine, ten
