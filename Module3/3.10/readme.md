@@ -24,4 +24,5 @@ What I did:
 2) Deleted all duplicates
 3) Added index coloumn
 
-## 3. Creating a measure that shows sales at -7 and -14 day periods
+## 3. Count amount in Euros
+(link - 3.10.6)
