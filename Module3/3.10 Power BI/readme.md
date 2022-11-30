@@ -1,8 +1,12 @@
 # Working with Power BI
+### Exercise list
+1. [Transform Data](#1-transform-data-by-power-query)
+2. [Create a table](#2-create-a-directory-of-category-types)
+3. [Count amount](#3-count-amount-in-euros) in Euros
 
-## 1. Transform Data in Power Query
+## 1. Transform Data by Power Query
 
-### I should transform Data from this form
+### From this form
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module3/3.10%20Power%20BI/pics/3.10.1.png"></p>
 
 ### To this form
