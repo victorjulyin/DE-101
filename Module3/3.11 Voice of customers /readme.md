@@ -26,5 +26,5 @@ Based on this, the first conclusions can be drawn
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module3/3.11%20Voice%20of%20customers%20/pics/3.11%204.png"></p>
 
 ### It is better to use some BI-tool to analyse this information
-I prefer Tableau
+I prefer Tableau. 
 In this case we can look through the Data in different contexts - current reporting tool, department, access to DW etc.
