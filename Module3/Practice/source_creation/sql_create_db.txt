@@ -1,33 +1,33 @@
     DROP TABLE IF EXISTS calendar;
     CREATE TABLE calendar
-    (
-    calendar_id    int NOT NULL,
-    listing_id     int NOT NULL,
-    "date"           date NOT NULL,
-    available      varchar(10) NOT NULL,
-    price          int NOT NULL,
-    adjusted_price int NOT NULL,
-    minimum_nights int NOT NULL,
-    maximum_nights int NOT NULL,
-    CONSTRAINT PK_1 PRIMARY KEY ( calendar_id )
-    );
+	(
+ 	listing_id     int NOT NULL,
+ 	"date"           date NOT NULL,
+ 	available      varchar(10) NOT NULL,
+ 	price          money NULL,
+ 	adjusted_price money NULL,
+ 	minimum_nights int NULL,
+ 	maximum_nights int NULL
+	
+	);
+
+
 
 -----------------------
 
     DROP TABLE IF EXISTS listings;
     CREATE TABLE listings
     (
-    listing_id             int NOT NULL,
     "id"                    int NOT NULL,
     listing_url           varchar(80) NOT NULL,
     scrape_id             int NOT NULL,
     last_scraped          date NOT NULL,
     name                  varchar(80) NOT NULL,
     "space"                 varchar(80) NOT NULL,
-    description           varchar(80) NOT NULL,
     experiences_offered   varchar(20) NOT NULL,
     neighborhood_overview varchar(80) NOT NULL,
-    CONSTRAINT PK_2 PRIMARY KEY ( listing_id )
+    description           varchar(80) NOT NULL
+
     );
 
 
@@ -37,7 +37,6 @@
     DROP TABLE IF EXISTS listings_summary;
     CREATE TABLE listings_summary
     (
-    listing_summary_id  int NOT NULL,
     "id"                  int NOT NULL,
     name                varchar(20) NOT NULL,
     host_id             int NOT NULL,
@@ -45,11 +44,12 @@
     neighbourhood_group varchar(20) NULL,
     neighbourhood       varchar(20) NOT NULL,
     latitude            decimal NOT NULL,
-    longitude           decimal NOT NULL,
     room_type           varchar(20) NOT NULL,
     price               int NOT NULL,
-    CONSTRAINT PK_3 PRIMARY KEY ( listing_summary_id )
+    longitude           decimal NOT NULL
+
     );
+
 
 
 -----------------------
@@ -58,10 +58,9 @@
     DROP TABLE IF EXISTS neighbourhoods;
     CREATE TABLE neighbourhoods
     (
-    neighbourhood_id    int NOT NULL,
     neighbourhood_group varchar(50) NULL,
-    neighbourhood       varchar(50) NOT NULL,
-    CONSTRAINT PK_4 PRIMARY KEY ( neighbourhood_id )
+    neighbourhood       varchar(50) NOT NULL
+
     );
 
 
@@ -71,15 +70,15 @@
     DROP TABLE IF EXISTS reviews;
     CREATE TABLE reviews
     (
-    review_id     int NOT NULL,
     listing_id    int NOT NULL,
     "id"            int NOT NULL,
     "date"          date NOT NULL,
     reviewer_id   int NOT NULL,
     reviewer_name varchar(50) NOT NULL,
-    comments      varchar(100) NOT NULL,
-    CONSTRAINT PK_5 PRIMARY KEY ( review_id )
+    comments      varchar(100) NOT NULL
+
     );
+
 
 
 -----------------------
@@ -88,10 +87,9 @@
     DROP TABLE IF EXISTS reviews_summary;
     CREATE TABLE reviews_summary
     (
-    review_summary_id int NOT NULL,
-    listing_id        int NOT NULL,
-    "date"              date NOT NULL,
-    CONSTRAINT PK_6 PRIMARY KEY ( review_summary_id )
+    listing_id int NOT NULL,
+    "date"       date NOT NULL
+
     );
 
 -----------------------
