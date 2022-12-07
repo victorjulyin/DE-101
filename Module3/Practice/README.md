@@ -20,6 +20,5 @@ To-do list:
 
 ## Procedure
 
-1) do this
-2) do that
-3) etc
+1) [Transform the Source](https://github.com/victorjulyin/DE-101/tree/main/Module3/Practice/xlsx_source)
+2) Connecting to Tableau. [Visualization and conclusions](https://github.com/victorjulyin/DE-101/tree/main/Module3/Practice/Tableau)

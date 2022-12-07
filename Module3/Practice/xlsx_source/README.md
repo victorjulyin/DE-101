@@ -2,13 +2,16 @@
 
 This is our [source files](https://www.kaggle.com/datasets/labdmitriy/airbnb?resource=download)
 
-* calendar - availability of the flat during the year
+* **calendar** - availability of the flat during the year
 * listings - detailed information about each offers
-* **listings_summary** - summary info about each object (less coloumns). It is enough to reach my goals
+* **listings_summary** - summary info about each object (less coloumns)
 * neighbourhoods - district list
 * neighbourhoods.geojson - geo shape of a district 
 * reviews - review list by each object
 * reviews_summary - summary info by reviews 
+
+
+**calendar + listings_summary is enough to reach my goals**
 
 ## .CSV to .XLSX
 
