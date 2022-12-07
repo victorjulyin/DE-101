@@ -7,7 +7,7 @@ I rent it for a long time and rent it out for a short time. It is easy
 
 To-do list:
 1) find out, what is the best district to rent an apartment.
-2) compare districs by:
+2) compare districts by:
 * the amount of apartments 
 * average rental price 
 * average loading of the apartments during the year
