@@ -5,17 +5,17 @@
 * [Download superstore-sample.xls (job1)](#download-superstore-samplexls-by-http-and-shell)
 * [Merge three tables into one (Transformation1)](#merge-three-tables-into-one)
 * [Split data into different formats (Transformation2)](#split-data-into-different-formats)
-** Products data - JSON
-** Returns data - XML
-** Orders by regions:
-*** CENTRAL - XLS
-*** WEST - "California", "Arizona", "Washington" and "Others" - csv
-*** SOUTH - csv (zip)
-*** EAST - text file .dat
+  * Products data - JSON
+  * Returns data - XML
+  * Orders by regions:
+    * CENTRAL - XLS
+    * WEST - "California", "Arizona", "Washington" and "Others" - csv
+    * SOUTH - csv (zip)
+    * EAST - text file .dat
 * [Add "marks" for more realism (Transformation3)](#add-marks)
-** WEST - different country names (US, USA, United States), extra symbols in "city" field
-** EAST - add typos in city names (difficult to predict for manual correction)
-** SOUTH - duplicate orders
+  * WEST - different country names (US, USA, United States), extra symbols in "city" field
+  * EAST - add typos in city names (difficult to predict for manual correction)
+  * SOUTH - duplicate orders
 
 
 

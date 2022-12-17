@@ -1,13 +1,13 @@
 ## Action plan
 
 1) [Installing Java Development Kit (if not installed)](#Installing-JDK)
-2) [Installing Pentaho DI on Mac](#Installing-Pentaho-DI)
+2) [Installing Pentaho DI on Mac](#installing-pentaho-di-the-easiest-way-for-me)
 
 ## Installing JDK
 
 ### Let's check, it is necessary or not
 
-If it is already installed, [just go here.](#Installing-Pentaho-DI)
+If it is already installed, [just go here.](#installing-pentaho-di-the-easiest-way-for-me)
 If it isn't - continue.
 
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.1%20Installing%20Pentaho%20DI%20on%20Mac/pics/Pentaho_jdk1.png"></p>
