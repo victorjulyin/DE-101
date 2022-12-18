@@ -16,6 +16,8 @@
   * WEST - different country names (US, USA, United States), extra symbols in "city" field
   * EAST - add typos in city names (difficult to predict for manual correction)
   * SOUTH - duplicate orders
+* [Final job](#final-job)
+* [Start a job by a task planner](#start-the-job-by-a-task-planner)
 
 
 
@@ -64,3 +66,29 @@
 
 
 ## Add marks
+
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/add_marks.png"></p>
+
+## Final job
+
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/final_job.png"></p>
+
+
+## Start the job by a task planner
+
+### I'll use this script
+
+
+    "/Applications/data-integration/kitchen.sh" /file:"/Users/a1/Desktop/introduction_pentaho/Final job.kjb" /level:Basic
+
+We should show a path to:
+kitchen.sh (linux) - If we want to start some job
+pan.sh (linux) - If we want to start some transformation
+
+
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/the_result.png"></p>
+
+
+
+
+ОСТАЛОСЬ ДОДЕЛАТЬ ЗАПУСК СКРИПТА С ПОМОЩЬЮ ПЛАНИРОВЩИКА ЗАДАЧ
