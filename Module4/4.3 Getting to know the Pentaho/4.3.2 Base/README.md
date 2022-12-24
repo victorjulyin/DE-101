@@ -79,16 +79,25 @@
 ### I'll use this script
 
 
-    "/Applications/data-integration/kitchen.sh" /file:"/Users/a1/Desktop/introduction_pentaho/Final job.kjb" /level:Basic
+    "/Applications/data-integration/kitchen.sh" /file:"/Users/a1/Desktop/introduction_pentaho/Final_job.kjb" /level:Basic
 
 We should show a path to:
 kitchen.sh (linux) - If we want to start some job
 pan.sh (linux) - If we want to start some transformation
 
+### Cron. The Job will be launched everyday at 18:05
 
+To launch cron: 
+
+  export EDITOR=nano
+  crontab -e
+
+Then just writing the script. 
+To save: ctrl+X => Y => enter
+
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/cron.png"></p>
+
+
+### The Result
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/the_result.png"></p>
 
-
-
-
-ОСТАЛОСЬ ДОДЕЛАТЬ ЗАПУСК СКРИПТА С ПОМОЩЬЮ ПЛАНИРОВЩИКА ЗАДАЧ
