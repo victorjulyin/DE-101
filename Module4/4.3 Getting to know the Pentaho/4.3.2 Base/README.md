@@ -43,6 +43,12 @@
 
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/job5.png"></p>
 
+
+Better:
+
+  curl -s -o /Users/a1/Desktop/temp/AAAAAAsample-superstore-shell.xls -L https://github.com/Data-Learn/data-engineering/raw/master/DE-101%20Modules/Module01/DE%20-%20101%20Lab%201.1/Sample%20-%20Superstore.xls
+  
+
 ### Connect everything 
 
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.3%20Getting to know the Pentaho/4.3.2%20Base/pics/job6.png"></p>
