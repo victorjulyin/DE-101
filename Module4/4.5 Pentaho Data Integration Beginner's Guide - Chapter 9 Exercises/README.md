@@ -2,12 +2,12 @@
 
   * [Interesting things that I got](#interesting-things-that-i-got)
 
-  * [Find products that are not in stock](#find-products-that-are-not-in-stock) (file)
-  * [Create a list of buyers](#create-a-list-of-buyers) 
-  * [Create a list of suggested products using Database Join](#create-a-list-of-suggested-products-using-database-join)
-  * [Create a list of buyers (using DB Join)](#create-a-list-of-buyers-using-db-join)
-  * [Update "region" field](#update-region-field-after-tutorial)
-  * [Update manufacturers table](#update-manufacturers-table)
+  * [Find products that are not in stock](#find-products-that-are-not-in-stock) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/1%20Have%20a%20go%20hero%20–%20preparing%20the%20delivery%20of%20the%20products%20(p290).ktr))
+  * [Create a list of buyers](#create-a-list-of-buyers) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/2%20Have%20a%20go%20hero%20–%20refining%20the%20transformation(p291).ktr))
+  * [Create a list of suggested products using Database Join](#create-a-list-of-suggested-products-using-database-join) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/3%20Time%20for%20action%20–%20using%20a%20join%20step%20to%20create%20a%20list%20of%20suggested%20products%20(p293).ktr))
+  * [Create a list of buyers (using DB Join)](#create-a-list-of-buyers-using-db-join) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/4%20Have%20a%20go%20hero%20–%20rebuilding%20the%20list%20of%20customers.ktr))
+  * [Update "region" field (SCD I)](#update-region-field-after-tutorial) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/8%20Time%20for%20action%20–%20keeping%20a%20history%20of%20changes%20in%20products%20by%20using%20the%20Dimension%20lookup:update%20step.ktr))
+  * [Update manufacturers table](#update-manufacturers-table) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/7%20Have%20a%20go%20hero%20update%20manufacturers.ktr))
 
 
 
