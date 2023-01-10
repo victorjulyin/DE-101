@@ -2,8 +2,8 @@
 
   * [Interesting things that I got](#interesting-things-that-i-got)
 
-  * [Find products that are not in stock](#find-products-that-are-not-in-stock)
-  * [Create a list of buyers](#create-a-list-of-buyers)
+  * [Find products that are not in stock](#find-products-that-are-not-in-stock) (file)
+  * [Create a list of buyers](#create-a-list-of-buyers) 
   * [Create a list of suggested products using Database Join](#create-a-list-of-suggested-products-using-database-join)
   * [Create a list of buyers (using DB Join)](#create-a-list-of-buyers-using-db-join)
   * [Update "region" field](#update-region-field-after-tutorial)
@@ -86,4 +86,7 @@ Videos that hepled me to understand these things:
 
 ### Update manufacturers table
 <p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/pics/4.5_12.png"></p>
+
+### Load the Regions dimension as a Type II SCD
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/pics/4.5_15.png"></p>
 
