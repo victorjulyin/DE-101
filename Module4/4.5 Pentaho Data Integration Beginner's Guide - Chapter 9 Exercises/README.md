@@ -9,7 +9,7 @@
   * [Update "region" field (SCD I)](#update-region-field-after-tutorial) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/8%20Time%20for%20action%20–%20keeping%20a%20history%20of%20changes%20in%20products%20by%20using%20the%20Dimension%20lookup:update%20step.ktr))
   * [Update manufacturers table](#update-manufacturers-table) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/7%20Have%20a%20go%20hero%20update%20manufacturers.ktr))
   * [Load the Regions dimension as a Type II SCD](#load-the-regions-dimension-as-a-type-ii-scd) ([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/10%20Have%20a%20go%20hero%20–%20loading%20the%20Regions%20dimension%20as%20a%20Type%20II%20SCD.ktr))
-  * [Final: Create a mini-demension with with puzzles attributes]()
+  * [Final: Create a mini-demension with with puzzles attributes](#final-create-a-mini-demension-with-with-puzzles-attributes)([file](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.5%20Pentaho%20Data%20Integration%20Beginner's%20Guide%20-%20Chapter%209%20Exercises/files/11%20Have%20a%20go%20hero%20–%20loading%20a%20mini%20dimension.ktr))
 
 
 
