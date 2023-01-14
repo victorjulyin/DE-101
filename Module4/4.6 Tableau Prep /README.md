@@ -9,6 +9,6 @@ You can find flows here:
 
 ### Tableau Prep result
 
-<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.6%20Tableau%20Prep/4.6_1.png"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.6%20Tableau%20Prep%20/4.6_1.png"></p>
 
-<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.6%20Tableau%20Prep/4.6_2.png"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.6%20Tableau%20Prep%20/4.6_2.png"></p>
