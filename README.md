@@ -7,10 +7,10 @@ This is a big Data Engineering course with large number of exercises and lection
 
 ## The plan
 
-1) [Module 1](https://github.com/victorjulyin/DE-101/tree/main/Module1) - base information about Data Engineering. Work with data set in Microsoft Excel and first dashboard creation.
-2) [Module 2](https://github.com/victorjulyin/DE-101/tree/main/Module2) - connection to DB, SQL, Data Model creation, visualizations (Visual Studio)
+1) [Module 1](https://github.com/victorjulyin/DE-101/tree/main/Module1) - base information about Data Engineering. Work with data set in Microsoft Excel and creation of the first dashboard.
+2) [Module 2](https://github.com/victorjulyin/DE-101/tree/main/Module2) - connection to DB, SQL, Data Model creation, visualizations (Google Data Studio)
 3) [Module 3](https://github.com/victorjulyin/DE-101/tree/main/Module3) - Business Intelligence, work with Power BI, Tableau
-4) [Module 4](https://github.com/victorjulyin/DE-101/tree/main/Module4) - ETL processes, work with PentahoDI, exercises from the "Pentaho DI Beginner's Guide" book
+4) [Module 4](https://github.com/victorjulyin/DE-101/tree/main/Module4) - ETL processes, work with PentahoDI and Tableau Prep, exercises from the "Pentaho DI Beginner's Guide" book
 5) In the process.
 
 
