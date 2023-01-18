@@ -13,15 +13,15 @@ What we have:
     * Route Tables - traffic rules
     * CIDR - it is used when we want to use a range of IP's (ours is "/16") 
   * SSH - secure shell protocol
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_model1.png"></p>
 
 
 
 ### First of all we need to make sure that we have a VPC.
 
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_vpc1.png"></p>
 
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_vpc2.png"></p>
 
 
 
@@ -33,7 +33,7 @@ What we have:
 4) *Advanced details* - IAM (access roles) and different settings (SSH)
 5) *Key pair* - very important. Access key to connect to the VM by SSH. 
 
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_ec2_1.png"></p>
 
 
 ### Now we can try to connect to our VM
@@ -42,18 +42,18 @@ What we have:
 via command (for Mac):
   ssh -i /path/to/private-key root@<ec2-public-dns-address>
 
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_t1.png"></p>
 
 
 #### Doesn't work:
 
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_t2.png"></p>
 
 
 #### We must protect the public key:
   chmod 600 vjulyin.pem
 
-<p align="center"><img  src="________"></p>
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2%20Introduction%20to%20cloud%20computing/pics/5.2_t3.png"></p>
 
 
 
