@@ -30,15 +30,15 @@ These services are the base of the AWS architecture.
 
 2) Choose a region.
 
-<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab1.png" width=40% height=40%>
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab1.png" width=25% height=25%>
 
 3) Find **vpc** by the search string
 
-<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab2.png" width=40% height=40%>
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab2.png" width=80% height=80%>
 
 4) Push **Create VPC**
 
-<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab3.png" width=40% height=40%>
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab3.png" width=80% height=80%>
 
 5) Insert these data to create VPC
 
@@ -49,7 +49,7 @@ These services are the base of the AWS architecture.
   * *Key:* **Name**
   * *Value - optional:* **HoLVPC**
 
-<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab4.png" width=40% height=40%>
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab4.png" width=80% height=80%>
 
 6) Push **Create VPC**
 
