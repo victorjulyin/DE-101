@@ -30,7 +30,7 @@ These services are the base of the AWS architecture.
 
 2) Choose a region.
 
-
+![](https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab1.png)
 
 
 
