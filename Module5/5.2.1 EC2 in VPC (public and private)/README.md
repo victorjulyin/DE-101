@@ -106,3 +106,31 @@ These services are the base of the AWS architecture.
 5) Choose a public subnet **sn-public-a**.
 
     <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab13.png" width=35% height=35%>
+
+6) Go to **Actions** => **Edit subnet settings**.
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab14.png" width=35% height=35%>
+
+7) Choose the **Enable auto-assign public IPv4 address**.
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab15.png" width=50% height=50%>
+
+8) Push **Save**
+
+9) To create an internet gateway go to **Internet gateways** in the left menu.
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab16.png" width=35% height=35%>
+
+10) Push **Create internet gateway** on the right and insert **hol-VPCIGW** to the *Name tag* field.
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab17.png" width=50% height=50%>
+
+11) Push **Create internet gateway** on the bottom.
+
+12) Choose created internet gateway, go to **Actions** => **Attach to VPC**
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab18.png" width=50% height=50%>
+
+13) Add **HoLVPC** and push **Attach intenet gateway**. We connected the internet gateway to our VPC
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab19.png" width=50% height=50%>
