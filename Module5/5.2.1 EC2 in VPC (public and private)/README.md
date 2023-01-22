@@ -22,8 +22,6 @@ These services are the base of the AWS architecture.
 
 
 
-
-
 ### Step 1: VPC creation
 
 1) Authorize in an AWS Management Console.
@@ -32,15 +30,15 @@ These services are the base of the AWS architecture.
 
     <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab1.png" width=25% height=25%>
 
-3) Find **vpc** by the search string
+3) Find **VPC** by the search string
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab2.png" width=80% height=80%>
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab2.png" width=60% height=60%>
 
 4) Push **Create VPC**
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab3.png" width=80% height=80%>
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab3.png" width=60% height=60%>
 
-5) Insert these data to create VPC
+5) Insert this data to create VPC:
 
     * *Name tag:* **HoLVPC**
     * *IPv4 CIDR block:* **10.0.0.0/16**
@@ -49,7 +47,8 @@ These services are the base of the AWS architecture.
     * *Key:* **Name**
     * *Value - optional:* **HoLVPC**
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab4.png" width=80% height=80%>
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab4.png" width=50% height=50%>
 
 6) Push **Create VPC**
 
@@ -57,7 +56,7 @@ These services are the base of the AWS architecture.
 
 1) Push **Subnets** in the left menu. Then push **Create subnet**.
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab5.png" width=35% height=35%>
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab5.png" width=70% height=70%>
 
 
 2) Choose created VPC and insert data:
@@ -73,7 +72,7 @@ These services are the base of the AWS architecture.
 
 4) To create a private subnet, push **Create subnet** again.
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab7.png" width=60% height=60%>
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab7.png" width=70% height=70%>
 
 5) Choose the same VPC as in the public subnet and insert data:
 
@@ -90,7 +89,7 @@ These services are the base of the AWS architecture.
 
 1) Go to the **Route tables** in the left menu.
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab9.png" width=35% height=35%>  
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab9.png" width=25% height=25%>  
 
 2) Go to the **Routes** tab to see existing routes.
 
@@ -103,7 +102,7 @@ These services are the base of the AWS architecture.
 
 4) Now go to **Subnets**.
 
-    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab12.png" width=35% height=35%>  
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab12.png" width=25% height=25%>  
 
 5) Choose a public subnet **sn-public-a**.
 
@@ -127,7 +126,7 @@ These services are the base of the AWS architecture.
 
     <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab17.png" width=50% height=50%>
 
-11) Push **Create internet gateway** on the bottom.
+11) Push **Create internet gateway** in the bottom.
 
 12) Choose created internet gateway, go to **Actions** => **Attach to VPC**.
 
@@ -182,7 +181,7 @@ These services are the base of the AWS architecture.
 
     <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab27.png" width=50% height=50%>
 
-2) Push **Launch instances**.
+2) Push **Launch instance**.
 
     <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab28.png" width=50% height=50%>
 
@@ -212,8 +211,8 @@ These services are the base of the AWS architecture.
     * *Auto-assign Public IP:* **Use subnet setting (Enable)**
     * *Firewall:*
       * **Create a new security group**
-      * *Security group name:* holpubSG
-      * *Description:* holpubSG
+      * *Security group name:* **holpubSG**
+      * *Description:* **holpubSG**
 
 8) Push **Launch instance** in the right menu.
 
@@ -222,7 +221,7 @@ These services are the base of the AWS architecture.
 
 ### Step 5: Launching the EC2 in the private subnet
 
-1) Push **Launch instances**.
+1) Push **Launch instance**.
 
     <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab28.png" width=50% height=50%>
 
@@ -245,8 +244,8 @@ These services are the base of the AWS architecture.
     * *Auto-assign Public IP:* **Use subnet setting (Enable)**
     * *Firewall:*
       * **Create a new security group**
-      * *Security group name:* holprivSG
-      * *Description:* holprivSG
+      * *Security group name:* **holprivSG**
+      * *Description:* **holprivSG**
       * *Security group rule:*
         * *Type:* **SSH**
         * *Protocol:* **TCP**
@@ -259,4 +258,26 @@ These services are the base of the AWS architecture.
 
 
 ### Step 6: Connecting to the public EC2 by SSH
+
+1) To find an address of the connection choose EC2 and push **Connect** on the right.
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab36.png" width=50% height=50%>
+
+2) Go to **SSH client** tab and copy the connection command. 
+
+    <img src="https://github.com/victorjulyin/DE-101/blob/main/Module5/5.2.1%20EC2%20in%20VPC%20(public%20and%20private)/pics/lab37.png" width=50% height=50%>
+
+3) Launch the Terminal on your computer. If you are using Windows - you can use *Git Bash*.
+
+4) Find the key on your computer and copy its path.
+
+5) For the security, change your key connection settings. Insert this command in the Terminal:
+
+    chmod 400 <your key name>
+
+6) Launch the command that you copied in the second step. You also should insert your key path into the quotes. For example:
+
+    ssh -i "/Users/myMac/Desktop" ec2-user...
+
+### Congratulations - you finished this tutorial!
 

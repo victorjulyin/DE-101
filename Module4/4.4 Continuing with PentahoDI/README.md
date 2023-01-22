@@ -9,15 +9,7 @@
   * [Sales_fact table](#sales_fact-table-creation): Table creation
   * [Final job](#final-job)
  
-Source files:
-  * [tutorial1.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/tutorial1.ktr)
-  * [tutorial2.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/tutorial2.ktr)
-  * [tutorial3.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/tutorial3.ktr)
-  * [tutorial4.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/tutorial4.ktr)
-  * [tutorial5.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/tutorial5.ktr)
-  * [sales_fact.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/sales_fact.ktr)
-  * [pentaho_job.ktr](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/pentaho_job.ktr)
-
+Source files [are here](https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing with PentahoDI/source_files)
 
 ------------------------------
 ### About functions
