@@ -10,12 +10,12 @@
 
 ### Pentaho DI
 
-<p align="center"><img src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/pics/sales_fact_transf.png" width=70% height=70%>
+<p align="center"><img src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/pics/sales_fact_transf.png" width=80% height=80%>
 
 <p align="center"><img src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.4%20Continuing%20with%20PentahoDI/pics/transf5.png" width=70% height=70%>
 
 ### Tableau Prep
 
-<p align="center"><img src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.6%20Tableau%20Prep%20/4.6_2.png" width=70% height=70%>
+<p align="center"><img src="https://github.com/victorjulyin/DE-101/blob/main/Module4/4.6%20Tableau%20Prep%20/4.6_2.png" width=90% height=90%>
 
 
