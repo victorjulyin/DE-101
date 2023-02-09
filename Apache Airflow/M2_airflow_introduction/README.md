@@ -1,4 +1,5 @@
-**M2_1**
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Apache%20Airflow/M2_airflow_introduction/pics/m2_1.png" width=50% height=50%>
+
 Airflow - a scheduler. And DAG is like a container for tasks.
 
 
@@ -7,7 +8,7 @@ Airflow - a scheduler. And DAG is like a container for tasks.
 
 DAG - is a class. So when we create a DAG, we create a new object.
 
-### Launching
+### Two launching options
 
 There is no difference between next launching options:
 
@@ -23,11 +24,28 @@ There is no difference between next launching options:
   with DAG('dag', schedule_interval=timedelta(days=1), start_date=days_ago(1)) as dag: ...
 
 
-### Optional DAG arguments
+### DAG arguments
 
+  # Necessary arguments
+  with DAG(dag_id='dag',                        # dag name that we'll see in an admin account
+           default_args={'owner': 'airflow'},   # parameters that will be used to every task / operator
+           schedule_interval='@daily',          # CRON expression
+           start_date=days_ago(1)               # Start date. In this case - yesterday
+        ) as dag: ... 
+
+  # Optional arguments (main)
   * retries - repeat N times if DAG failed
   * on_failure_callback - calls some function if DAG failed (usually notifications by messengers)
   * trigger_rule - what to do if some task failed
+  * pool
+
+  
+
+### Optional DAG arguments
+
+  * retries - repeat N times if DAG failed
+  * 
+  * 
 
 
 ## Operators
@@ -37,17 +55,27 @@ It is a class DAG object. So inside is just a Python code. We can create our own
 
 
   # Python operator sample (action)
-
+  
   def print_context(ds):
     return 'Hello World!'
 
+
   run_this = PythonOperator(
-    task_id='print_the_context',
-    python_callable=print_context,
-    op_kwargs={
+    task_id='print_the_context',    # task name (shows in an admin account)
+    python_callable=print_context,  # function that will be executing
+    op_kwargs={                     # arguments for an executing func
             'url': 'https://raw.githubusercontent.com/file25',
             'tmp_file': '/tmp/file.csv'}
-    dag=dag
+    dag=dag                         # dag name
+  )
+
+  # Email operator
+  email_op = EmailOperator(
+    task_id='send_email',                 # task name
+    to="<YOUR EMAIL>",                    # recipient
+    subject="Test Email Please Ignore",   
+    html_content=None,                    # the text
+    files=['/tmp/file.csv']               # the attachment
   )
 
   # Or a bash-operator (action)
@@ -89,12 +117,6 @@ We use operators for a description of certain actions:
   * Sensor - checks existance of something (for example - is there some file on a computer?)
 
 
-## Dependencies
-
-M2_2
-M2_3
-
-
 ## DAG + operators creation example
 
   from airflow import DAG
@@ -123,4 +145,18 @@ Declarative approach - strictly specify the values to be used
 
   print (1+1)
 
+
+
+## Dependencies and documentation
+
+  # Документация
+  t1.doc_md = "Task Documentations :)"
+  dag.doc_md = "Dag Documentations :)"
+
+
+
+
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Apache%20Airflow/M2_airflow_introduction/pics/m2_2.png" width=50% height=50%>
+
+<img src="https://github.com/victorjulyin/DE-101/blob/main/Apache%20Airflow/M2_airflow_introduction/pics/m2_3.png" width=50% height=50%>
 
