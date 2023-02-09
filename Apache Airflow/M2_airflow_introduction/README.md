@@ -27,27 +27,27 @@ DAG - is a class. So when we create a DAG, we create a new object.
 There is no difference between next launching options:
 
     # Without "WITH":
-  dag = DAG('dag', schedule_interval=timedelta(days=1), start_date=days_ago(1))
+    dag = DAG('dag', schedule_interval=timedelta(days=1), start_date=days_ago(1))
 
     # By context manager:
-  with DAG('dag', schedule_interval=timedelta(days=1), start_date=days_ago(1)) as dag: ...
+    with DAG('dag', schedule_interval=timedelta(days=1), start_date=days_ago(1)) as dag: ...
   
 
 
 ### DAG arguments
 
-    # Necessary arguments
-  with DAG(dag_id='dag',                        # dag name that we'll see in an admin account
+    # Necessary arguments:
+      with DAG(dag_id='dag',                        # dag name that we'll see in an admin account
            default_args={'owner': 'airflow'},   # parameters that will be used to every task / operator
            schedule_interval='@daily',          # CRON expression
            start_date=days_ago(1)               # Start date. In this case - yesterday
         ) as dag: ... 
 
-    # Optional arguments (main)
-  * retries - repeat N times if DAG failed
-  * on_failure_callback - calls some function if DAG failed (usually notifications by messengers)
-  * trigger_rule - what to do if some task failed
-  * pool
+    # Optional arguments (main):
+      * retries - repeat N times if DAG failed
+      * on_failure_callback - calls some function if DAG failed (usually notifications by messengers)
+      * trigger_rule - what to do if some task failed
+      * pool
 
   
 
@@ -60,49 +60,50 @@ It is a class DAG object. So inside is just a Python code. We can create our own
 
     # Python operator sample (action)
   
-  def print_context(ds):
-    return 'Hello World!'
+    def print_context(ds):
+      return 'Hello World!'
 
-
-  run_this = PythonOperator(
-    task_id='print_the_context',    # task name (shows in an admin account)
-    python_callable=print_context,  # function that will be executing
-    op_kwargs={                     # arguments for an executing func
+    run_this = PythonOperator(
+      task_id='print_the_context',    # task name (shows in an admin account)
+      python_callable=print_context,  # function that will be executing
+      op_kwargs={                     # arguments for an executing func
             'url': 'https://raw.githubusercontent.com/file25',
             'tmp_file': '/tmp/file.csv'}
-    dag=dag                         # dag name
-  )
+      dag=dag                         # dag name
+      )
+
 
     # Email operator
-  email_op = EmailOperator(
-    task_id='send_email',                 # task name
-    to="<YOUR EMAIL>",                    # recipient
-    subject="Test Email Please Ignore",   
-    html_content=None,                    # the text
-    files=['/tmp/file.csv']               # the attachment
-  )
+    email_op = EmailOperator(
+      task_id='send_email',                 # task name
+      to="<YOUR EMAIL>",                    # recipient
+      subject="Test Email Please Ignore",   
+      html_content=None,                    # the text
+      files=['/tmp/file.csv']               # the attachment
+      )
+
 
     # Or a bash-operator (action)
 
-  BashOperator(task_id='echo_1', bash_command='echo 1',dag=dag)
+    BashOperator(task_id='echo_1', bash_command='echo 1',dag=dag)
 
 
     # Operator to transfer Data from MySQL to GCS (transfer)
-  upload = MySQLToGCSOperator(
-    task_id='mysql_to_gcs', 
-    sql=SQL_QUERY, 
-    bucket=GCS_BUCKET, 
-    filename=FILENAME, 
-    export_format='csv'
-  )
+    upload = MySQLToGCSOperator(
+      task_id='mysql_to_gcs', 
+      sql=SQL_QUERY, 
+      bucket=GCS_BUCKET, 
+      filename=FILENAME, 
+      export_format='csv'
+      )
 
     # Operator that checks existing of a file on a disk (sensor)
-  sensor_task = FileSensor(
-     task_id="my_file_sensor_task", 
-     poke_interval=30, 
-     fs_conn_id=PATH, 
-     filepath=FILE_OR_NAME
-  )
+    sensor_task = FileSensor(
+       task_id="my_file_sensor_task", 
+       poke_interval=30, 
+       fs_conn_id=PATH, 
+       filepath=FILE_OR_NAME
+     )
 
 
 
@@ -123,31 +124,31 @@ We use operators for a description of certain actions:
 
 ## DAG + operators creation example
 
-  from airflow import DAG
-  from datetime import timedelta
-  from airflow.utils.dates import days_ago
-  from airflow.operators.bash_operator import BashOperator
+    from airflow import DAG
+    from datetime import timedelta
+    from airflow.utils.dates import days_ago
+    from airflow.operators.bash_operator import BashOperator
  
     # Create an object of DAG class
-  dag =  DAG('dag',schedule_interval=timedelta(days=1), start_date=days_ago(1))
+    dag =  DAG('dag',schedule_interval=timedelta(days=1), start_date=days_ago(1))
 
-    # Create a few steps, that will execute bash-commands in parallel
-  t1 = BashOperator(task_id='echo_1', bash_command='echo 1',dag=dag)
-  t2 = BashOperator(task_id='echo_2', bash_command='echo 2',dag=dag)
+    # Create a few steps, that will execute   bash-commands in parallel
+    t1 = BashOperator(task_id='echo_1', bash_command='echo 1',dag=dag)
+    t2 = BashOperator(task_id='echo_2', bash_command='echo 2',dag=dag)
 
 This approach allows us to build declarative-style pipelines.
 
 **More about declarative and imperative approach:**
 Imperative approach - build some chain of tasks but don't give exact values
 
-  a = int(input())
-  b = int(input())
-  print(a + b)
+    a = int(input())
+    b = int(input())
+    print(a + b)
 
 
 Declarative approach - strictly specify the values to be used
 
-  print (1+1)
+    print (1+1)
 
 
 
@@ -155,14 +156,14 @@ Declarative approach - strictly specify the values to be used
 
 ### Documentation 
 
-  with DAG('dag',schedule_interval=timedelta(days=1), start_date=days_ago(1)) as dag:
+    with DAG('dag',schedule_interval=timedelta(days=1), start_date=days_ago(1)) as dag:
     
     # "Create a Python operator"  - also kind of documentation
-  t1 = PythonOperator(task_id='print', python_callable=f_callable)
+    t1 = PythonOperator(task_id='print', python_callable=f_callable)
 
     # Documentation
-  t1.doc_md = "Task Documentations :)"
-  dag.doc_md = "Dag Documentations :)"
+    t1.doc_md = "Task Documentations :)"
+    dag.doc_md = "Dag Documentations :)"
 
 ### And we'll see this in a web interface 
 
@@ -176,9 +177,9 @@ Declarative approach - strictly specify the values to be used
 
 <img src="https://github.com/victorjulyin/DE-101/blob/main/Apache%20Airflow/M2_airflow_introduction/pics/m2_3.png" width=50% height=50%>
 
-    # Dependency samples
+**Dependency samples**
 
-  * t1 >> t2             # t2 will be executed only after t1
-  * t1 >> [t2, t3]       # after t1 execution => t2 and t3 will be executed in parallel 
-  * [t1, t2] >> [t3, t4] # can not use
+    * t1 >> t2             # t2 will be executed only after t1
+    * t1 >> [t2, t3]       # after t1 execution => t2 and t3 will be executed in parallel 
+    * [t1, t2] >> [t3, t4] # can not use
   
