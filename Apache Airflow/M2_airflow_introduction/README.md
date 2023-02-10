@@ -62,13 +62,15 @@ It is a class DAG object. So inside is just a Python code. We can create our own
   
     def print_context(ds):
       return 'Hello World!'
+    
+    from airflow.operators.python_operator import PythonOperator
 
     run_this = PythonOperator(
       task_id='print_the_context',    # task name (shows in an admin account)
       python_callable=print_context,  # function that will be executing
       op_kwargs={                     # arguments for an executing func
             'url': 'https://raw.githubusercontent.com/file25',
-            'tmp_file': '/tmp/file.csv'}
+            'tmp_file': '/tmp/file.csv'},
       dag=dag                         # dag name
       )
 
@@ -179,6 +181,8 @@ Declarative approach - strictly specify the values to be used
 
 **Dependency samples**
 
+    # It is better to specify a dependency after a operator
+    
     * t1 >> t2             # t2 will be executed only after t1
     * t1 >> [t2, t3]       # after t1 execution => t2 and t3 will be executed in parallel 
     * [t1, t2] >> [t3, t4] # can not use
