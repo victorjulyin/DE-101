@@ -1,0 +1,1 @@
+<p align="center"><img  src="https://github.com/victorjulyin/DE-101/blob/main/Module2/2.6%20Visualize%20Data%20(Data%20Studio)/data_studio.png" width=60% height=60%></p>

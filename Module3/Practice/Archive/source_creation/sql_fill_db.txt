@@ -1,0 +1,7 @@
+
+    COPY calendar 
+    FROM '/Users/a1/Downloads/archive/calendar.csv' 
+    DELIMITER ',' 
+    CSV HEADER;
+
+------------------------
