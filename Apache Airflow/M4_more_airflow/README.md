@@ -79,29 +79,8 @@ Besides, it lets to mass relaunch tasks, edit global variables, manage access et
 The most useful tabs:
     * DAGs - list of all DAGs
     * Browse - logs
-      * Task Instances - the place where we can see all our tasks and their statuses. Also we can change the status manually here
     * Admin - configs, global variables, xcom
-      * Variables - we can create global variables here (we'll have an access to them from everywhere)
-      * Connections - info about our data sources (hosts, passwords, logins etc)
-      * Pools - tool to restrict executable threads 
-      * Xcom - temporary storage for data from tasks
-    * Security - info about airflow users
     
-
-#### How to get access to a connection
-
-    # Пример доступа к переменной connection
-    from airflow.hooks.base_hook import BaseHook
-    host = BaseHook.get_connection("postgres_default").host
-    pass = BaseHook.get_connection("postgres_default").password
-
-
-#### How to call a variable
-
-    # access to a global variable example
-    from airflow.models import Variable
-    foo = Variable.get("key")
-
 
 
 
