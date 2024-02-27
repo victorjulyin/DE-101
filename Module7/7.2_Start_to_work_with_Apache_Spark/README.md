@@ -23,3 +23,9 @@
     - Spark Docker
     - Managed Spark (Databricks, Amazon Glue)
     - Spark Kubernetes
+
+## First try of Spark
+    - I've written the code. Run the provided command to see the result:
+        ```
+        python Module7\7.2_Start_to_work_with_Apache_Spark\spark_script.py Module7\7.2_Start_to_work_with_Apache_Spark\mnm_dataset.csv
+        ```

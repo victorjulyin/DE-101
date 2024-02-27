@@ -12,5 +12,4 @@ This is a big Data Engineering course with large number of exercises and lection
 3) [Module 3](https://github.com/victorjulyin/DE-101/tree/main/Module3) - Business Intelligence, work with Power BI, Tableau
 4) [Module 4](https://github.com/victorjulyin/DE-101/tree/main/Module4) - ETL processes, work with PentahoDI, exercises from the "Pentaho DI Beginner's Guide" book
 5) Module 5 - Cloud Computing. In the process.
-
-
+6) Module 7 - Apache Spark. In progress.
