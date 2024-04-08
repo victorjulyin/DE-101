@@ -1,7 +1,6 @@
 '''First try of the PySpark.'''
 # pylint: disable=pointless-string-statement
 
-import sys
 from pyspark.sql import SparkSession
 
 """
@@ -18,11 +17,6 @@ from pyspark.sql import SparkSession
 """
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        # show that necessary to pass the csv file
-        print("Usage: mnmcount <file>", file=sys.stderr)
-        sys.exit(-1)
-
     # creating a spark session
     spark: SparkSession = (
         SparkSession
@@ -32,13 +26,14 @@ if __name__ == "__main__":
     )
 
     # get the csv file path
-    mnm_file = sys.argv[1]
+    MNM_FILE = 'Module7/7.3_Start_to_work_with_Apache_Spark/mnm_dataset.csv'
+
     # create a df
     mnm_df = (
         spark.read.format('csv')
         .option('header', 'true')
         .option('inferSchema', 'true')
-        .load(mnm_file)
+        .load(MNM_FILE)
     )
     mnm_df.show(5, truncate=False) # truncate - means crop the row or not
 
